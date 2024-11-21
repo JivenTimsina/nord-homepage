@@ -29,17 +29,19 @@ function updateClockAndDate() {
 }
 
 // Perform search on enter key
-document.getElementById("searchInput").addEventListener("keydown", function(event) {
-  if (event.key === "Enter") {
-    event.preventDefault();
-    const query = this.value.trim();
-    if (query) {
-      const searchURL = `https://www.duckduckgo.com/search?q=${encodeURIComponent(query)}`;
-      window.open(searchURL, "_blank");
+const searchInput = document.querySelector("#searchInput");
+if (searchInput) {
+  searchInput.addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+      event.preventDefault(); // Prevent default action
+      const query = this.value.trim();
+      if (query) {
+        const searchURL = `https://duckduckgo.com/?q=${encodeURIComponent(query)}`;
+        window.open(searchURL, "_blank"); // Open search URL in a new tab
+      }
     }
-  }
-});
-
+  });
+}
 // Initialize page
 function initializePage() {
   updateGreeting();
