@@ -34,7 +34,7 @@ document.getElementById("searchInput").addEventListener("keydown", function(even
     event.preventDefault();
     const query = this.value.trim();
     if (query) {
-      const searchURL = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+      const searchURL = `https://www.duckduckgo.com/search?q=${encodeURIComponent(query)}`;
       window.open(searchURL, "_blank");
     }
   }
