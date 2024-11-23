@@ -38,6 +38,7 @@ if (searchInput) {
       if (query) {
         const searchURL = `https://duckduckgo.com/?q=${encodeURIComponent(query)}`;
         window.open(searchURL, "_blank"); // Open search URL in a new tab
+        this.value = "";
       }
     }
   });

@@ -2,4 +2,4 @@
 custom firefox homepage
 
 ## Image Preview
-![Alt text](discription.png)
+![Alt text](assets/discription.png)

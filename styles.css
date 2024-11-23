@@ -2,6 +2,11 @@ body {
   margin: 0;
   font-family: 'Arial', sans-serif;
   background-color: #2e3440;
+  background-image: linear-gradient(to bottom, rgba(46, 52, 64, 0.8), rgba(46, 52, 64, 0.8)),
+    url('assets/waves1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: #d8dee9;
   display: flex;
   justify-content: center;
@@ -34,6 +39,9 @@ body {
 /* Search Bar */
 .search {
   margin-top: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #searchInput {
@@ -43,14 +51,15 @@ body {
   color: #d8dee9;
   border-radius: 5px;
   outline: none;
-  width: 350px;
+  width: 378px;
   font-size: 1rem;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 #searchInput::placeholder {
   color: #d8dee9;
   opacity: 0.7;
+  font-weight: bold;
 }
 
 .search-btn {
@@ -84,6 +93,12 @@ body {
   width: 38px;
   height: 38px;
   transition: transform 0.3s;
+}
+
+/* twitter logo*/
+.icons .twitter {
+  width: 33px;
+  height: 33px;
 }
 
 .icons img:hover {
