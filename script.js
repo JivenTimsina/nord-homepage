@@ -1,3 +1,5 @@
+// focus input field when page gets opened
+document.getElementById('searchInput').focus();
 // update greeting
 function updateGreeting() {
   const greetingElement = document.getElementById("greeting");
