@@ -5,11 +5,11 @@ function updateGreeting() {
   let greeting;
 
   if (hours < 12) {
-    greeting = "Good Morning, Jiven!";
+    greeting = "Good Morning, Jiven! ☕";
   } else if (hours < 18) {
-    greeting = "Good Afternoon, Jiven!";
+    greeting = "Good Afternoon, Jiven! 🙌";
   } else {
-    greeting = "Good Evening, Jiven!";
+    greeting = "Good Evening, Jiven! 🌓";
   }
 
   greetingElement.textContent = greeting;
